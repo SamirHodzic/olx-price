@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "queryTransform": {
+            "addOrReplaceParams": [{ "key": "has_price", "value": "1" }]
+          }
+        }
+      }
+    },
+    "condition": {
+      "regexFilter": "^https?://(?:www\\.)?olx\\.ba/api/.*",
+      "resourceTypes": ["xmlhttprequest", "sub_frame", "main_frame", "other"]
+    }
+  }
+]

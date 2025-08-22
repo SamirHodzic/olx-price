@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "OLX s cijenama",
+  "version": "0.1",
+  "description": "OLX bez cijena 'Na Upit'",
+  "permissions": ["declarativeNetRequestWithHostAccess"],
+  "host_permissions": ["*://olx.ba/*"],
+  "icons": {
+    "16": "16.png",
+    "48": "48.png",
+    "128": "128.png"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules_1.json"
+      }
+    ]
+  }
+}
